@@ -1,0 +1,8 @@
+version: 0.2
+
+
+phases:
+  build:
+    commands:
+      - echo "test"
+      - aws imagebuilder start-image-pipeline-execution --image-pipeline-arn arn:aws:imagebuilder:ap-southeast-1:040256855012:image-pipeline/ec2-github
